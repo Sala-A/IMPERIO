@@ -18,7 +18,7 @@ a:visited
 {
     text-decoration: none;
 }
-
+  
 //sirve para que los input de numero no tengan las flechas
 input{
     &::-webkit-outer-spin-button,
@@ -27,3 +27,13 @@ input{
     margin: 0;}
     outline: none
 }
+
+//Quita las viñetas
+ul, li{
+    list-style-type: none;
+}
+
+*[title] {
+    color: rgb(240, 4, 4) !important;
+    text-decoration: none !important;
+  }
