@@ -1,0 +1,29 @@
+@use "./Variables" as *;
+
+.button1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    background: none;
+    border: 1px solid $colorBlue;
+    border-radius: 5px;
+    color: $colorWhite;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 12px 24px;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba($colorBlue, 0.4); // Sombra suave para el efecto de profundidad
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.065); // Fondo semi-transparente
+        color: $colorBlue; // Color del texto al hacer hover
+        box-shadow: 0 1px 5px rgba($colorBlue, 0.5); // Sombra más intensa al hacer hover
+    }
+
+    &:active {
+        transform: scale(1.05); // Escala del botón al hacer clic para un efecto de "presionado"
+        box-shadow: 0 1px 3px rgba($colorBlue, 0.3); // Sombra más tenue al hacer clic
+    }
+}
+
