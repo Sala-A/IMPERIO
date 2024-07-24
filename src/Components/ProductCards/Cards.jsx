@@ -1,5 +1,5 @@
-import Button from "../Common/Button";
-import Data from "./Data.jsx";
+import { Button } from "../Common/Button";
+import Data from "./Data";
 
 export const Cards = () => {
   return (
@@ -10,7 +10,7 @@ export const Cards = () => {
             <h3 className="titleCard">{product.title}</h3>
             <p className="price-card">${product.price}</p>
             <img id="img-card" src={product.img} alt={product.title} />
-            <Button />
+            <Button name='Ver producto'/>
           </div>
         </a>
       ))}
