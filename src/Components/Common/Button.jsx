@@ -1,11 +1,8 @@
-
-const Button = () => {
+// eslint-disable-next-line react/prop-types
+export function Button({name}) {
   return (
-    <div>
-      <button className="button1">Ver producto</button>
-    </div>
-  )
+    <>
+      <button className="button1">{ name }</button>
+    </>
+  );
 }
-
-export default Button
-
