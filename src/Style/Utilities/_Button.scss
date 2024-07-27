@@ -1,7 +1,7 @@
 @use "./Variables" as *;
 
-.button1 {
-    width: 100%;
+@mixin button1($width: auto) {
+    width: $width;
     text-align: center;
     font-weight: 600;
     background: none;
