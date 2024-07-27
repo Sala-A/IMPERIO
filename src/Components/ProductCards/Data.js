@@ -36,13 +36,6 @@ export const Data = [
     price: "123.457",
   },
   {
-    id: 6,
-    img: "/Scripts/processed_images/image7_transparent.png",
-    title: "Lorem Ipsum",
-    category: "Celulares",
-    price: "720.000",
-  },
-  {
     id: 7,
     img: "/Scripts/processed_images/image7_transparent.png",
     title: "Lorem Ipsum",

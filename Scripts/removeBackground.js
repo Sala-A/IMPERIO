@@ -36,11 +36,6 @@ const images = [
     filename: 'image5'
   },
   {
-    id: 6,
-    url: 'https://resources.claroshop.com/medios-plazavip/s2/10487/1309058/5e319fe911643-2624cfbc-b5c2-42c9-a146-01f74a9d7dd2-1600x1600.jpg',
-    filename: 'image6'
-  },
-  {
     id: 7,
     url: 'https://th.bing.com/th/id/OIP.1PQ_bOIwufs8Gnmf5M2ABgHaHa?w=600&h=600&rs=1&pid=ImgDetMain',
     filename: 'image7'
