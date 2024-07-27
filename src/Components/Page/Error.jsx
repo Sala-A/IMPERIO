@@ -1,7 +1,7 @@
 export default function Error() {
   return (
     <div className="errorPage">
-      <h1 className="errorCode">404</h1>
+      <img src="/5203299-removebg-preview.png" alt="" />
       <p className="errorMessage">
         Oops! The page you are looking for does not exist.
       </p>
