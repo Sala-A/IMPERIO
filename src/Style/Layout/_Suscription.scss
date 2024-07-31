@@ -1,0 +1,47 @@
+@use "../Utilities" as *;
+
+.suscription-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  margin: 5rem auto;
+  color: $colorWhite;
+  .title-suscription {
+    font-size: 2em;
+  }
+  .info-suscription {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input[type="email"] {
+      width: 350px;
+      padding: 15px 55px 15px 15px;
+      border: 2px solid $colorBlue;
+      border-radius: 50px;
+      font-size: 1em;
+      margin-left: 25px;
+    }
+    .btn-suscription {
+      position: relative;
+      right: 50px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50px;
+      background-color: $colorBlue;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .message {
+    position: relative;
+    top: 10px;
+    right: 15px;
+    font-size: 1em;
+    color: $colorBlue;
+  }
+}

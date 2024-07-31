@@ -1,5 +1,6 @@
 import Navbar from "../Common/Navbar";
 import Footer from "../Common/Footer";
+import Suscription from "../Common/Suscription";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <img className="promotional-image" src="/women2.png" alt="Promotional" />
         </div>
       </main>
+      <Suscription />
       <Footer />
     </div>
   );
