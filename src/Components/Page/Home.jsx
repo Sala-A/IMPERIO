@@ -1,11 +1,12 @@
 import Navbar from "../Common/Navbar";
 import Footer from "../Common/Footer";
 import Suscription from "../Common/Suscription";
+import BrandGallery from "../Common/BrandGallery";
 
 export default function Home() {
   return (
     <div className="home">
-      <Navbar />,
+      <Navbar />
       <main className="main">
         <div className="ad-container">
           <h1 className="text-main">
@@ -28,6 +29,7 @@ export default function Home() {
         </div>
       </main>
       <Suscription />
+      <BrandGallery />
       <Footer />
     </div>
   );
