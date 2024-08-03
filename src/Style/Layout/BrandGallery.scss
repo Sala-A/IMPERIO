@@ -1,16 +1,20 @@
-.containerGallery{
-    .title-brandGallery{
-        text-align: center;
-        margin-bottom: 5rem;
+.containerGallery {
+  .title-brandGallery {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .brand-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  #img-brand-gallery {
+    width: 90px;
+    height: 70px;
+    filter: grayscale(100%) brightness(350%);
+    &:hover{
+      scale: 0.95;
+      filter: grayscale(100%) brightness(150%);
     }
-    .brand-gallery{
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-    }
-    #img-brand-gallery{
-        width: 90px;
-        height: 70px;
-        filter: grayscale(100%) brightness(300%)
-    }
+  }
 }
