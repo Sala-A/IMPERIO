@@ -1,8 +1,5 @@
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+@use "/src/Style/Utilities/Button" as *;
+@use "/src/Style/Utilities/Variables" as *;
 
 .card {
   margin-left: 15px;
@@ -10,7 +7,7 @@
   min-height: 400px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.2);
-  border: 1px solid #00c2ff;
+  border: 1px solid $colorBlue;
   border-radius: 15px;
   box-shadow: 0 1px 8px #00c3ffab; // Sombra sutil para dar profundidad
   transition: transform 0.3s ease;
@@ -25,12 +22,12 @@
     z-index: 1;
 
     .titleCard {
-      color: #ffffff;
+      color: $colorWhite;
       text-align: start;
     }
 
     .price-card {
-      color: #00c2ff;
+      color: $colorBlue;
       font-size: 1.2em;
       font-weight: bold;
       text-align: start;
@@ -40,10 +37,13 @@
       width: 100%;
       object-fit: cover;
       border-radius: 8px;
-      border: 1px solid #ffffff;
+      border: 1px solid $colorWhite;
       padding: 10px;
       height: auto;
-      background-color: transparent !important;
+      background-color: $transparent !important;
     }
+  }
+  .btn-carousel {
+    @include button1();
   }
 }

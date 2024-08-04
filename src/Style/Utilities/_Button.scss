@@ -1,7 +1,7 @@
 @use "./Variables" as *;
 
 @mixin button1($width: auto) {
-    width: $width;
+    width: $width; 
     text-align: center;
     font-weight: 600;
     background: none;
@@ -17,12 +17,12 @@
 
     &:hover {
         background: rgba(255, 255, 255, 0.065); // Fondo semi-transparente
-        color: $colorBlue; // Color del texto al hacer hover
+        color: $colorBlue;
         box-shadow: 0 1px 5px rgba($colorBlue, 0.5); // Sombra más intensa al hacer hover
     }
 
     &:active {
-        transform: scale(1.05); // Escala del botón al hacer clic para un efecto de "presionado"
+        transform: scale(1.05);
         box-shadow: 0 1px 3px rgba($colorBlue, 0.3); // Sombra más tenue al hacer clic
     }
 }

@@ -1,21 +1,15 @@
-import { Button } from "../Common/Button";
-import Data from "./Data";
-
-export const Cards = () => {
+// eslint-disable-next-line react/prop-types
+const Cards = ({ title, price, img }) => {
   return (
-    <div className="cards-container">
-      {Data.map((product) => (
-        <a href="#" className="card" key={product.id}>
-          <div className="card-info">
-            <h3 className="titleCard">{product.title}</h3>
-            <p className="price-card">${product.price}</p>
-            <img id="img-card" src={product.img} alt={product.title} />
-            <Button name='Ver producto'/>
-          </div>
-        </a>
-      ))}
-    </div>
+    <a href="#" className="card">
+      <div className="card-info">
+        <h3 className="titleCard">{title}</h3>
+        <p className="price-card">${price}</p>
+        <img id="img-card" src={img} alt={title} />
+        <button className="btn-carousel">Ver producto</button>
+      </div>
+    </a>
   );
-}
+};
 
 export default Cards;
