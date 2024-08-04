@@ -17,9 +17,6 @@ export default function Footer() {
       <hr />
       <nav className="footer-nav">
         <a className="a_footer" href="#">
-          Home
-        </a>
-        <a className="a_footer" href="#">
           Nosotros
         </a>
         <a className="a_footer" href="#">
