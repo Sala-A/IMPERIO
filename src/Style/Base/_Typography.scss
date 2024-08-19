@@ -19,12 +19,12 @@ a:visited {
 
 //sirve para que los input de numero no tengan las flechas
 input {
+  outline: none;
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-  outline: none;
 }
 
 //Quita las viñetas
