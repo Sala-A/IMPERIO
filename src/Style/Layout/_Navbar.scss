@@ -5,9 +5,9 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 30px 20px 40px;
-  .logo {
-    user-select: none;
-    color: $colorWhite;
+  #logo {
+    transition: filter 0.3s ease;
+    filter: drop-shadow(0px 0px 10px $button-hover);
   }
   .nav-links {
     display: flex;

@@ -3,8 +3,17 @@ import Search from "./Search";
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="#" id="logo">
-        <h1 className="logo">IMPERIO</h1>
+      <a href="#" className="logo">
+        <img
+          id="logo"
+          src="./imperio.png"
+          style={{
+            width: "180px",
+            height: "150px",
+            position: "relative",
+            left: "50px",
+          }}
+        />
       </a>
       <ul className="nav-links">
         <li className="li-nav">

@@ -10,20 +10,11 @@
     .social-media {
       display: flex;
       gap: 15px;
-      #img-icon{
+      #img-icon {
         transition: transform 0.3s ease;
         &:hover {
           transform: scale(1.1);
-      }}
-  }
-    .company-name {
-      
-      flex-grow: 1;
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
-      #company-name {
-        color: $colorWhite;
+        }
       }
     }
   }
