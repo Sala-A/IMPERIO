@@ -10,7 +10,7 @@ export default function Footer() {
           fontWeight: "bold",
         }}
       >
-        <a href="#" id="name">
+        <a href="/" id="name">
           <img
             id="logo"
             src="./imperio.png"
@@ -22,7 +22,7 @@ export default function Footer() {
         </a>
       </div>
       <div className="social-media">
-        <a className="a_socialMedia" href="https://www.instagram.com/">
+        <a className="a_socialMedia" href="instagram.com/">
           <img
             id="img-icon"
             title="Instagram"
@@ -39,7 +39,6 @@ export default function Footer() {
           />
         </a>
       </div>
-
       <hr />
       <nav className="footer-nav">
         <a className="a_footer" href="#">
@@ -56,7 +55,7 @@ export default function Footer() {
         <a id="footer-copy" href="#">
           Mapa de navegación de la página
         </a>
-        <a id="footer-copy" href="#">
+        <a id="footer-copy" href="/AllRightsReserved">
           Daniela 2024, todos los derechos reservados.
         </a>
       </div>

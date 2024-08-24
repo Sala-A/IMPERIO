@@ -3,7 +3,7 @@ import Search from "./Search";
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="#" className="logo">
+      <a href="/" className="logo">
         <img
           id="logo"
           src="./imperio.png"

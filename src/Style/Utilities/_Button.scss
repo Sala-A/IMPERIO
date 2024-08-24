@@ -1,27 +1,86 @@
 @use "./Variables" as *;
 
 @mixin button1($width: auto) {
-    width: $width; 
-    text-align: center;
-    font-weight: 600;
-    background: none;
-    border: 1px solid $colorBlue;
-    border-radius: 5px;
-    color: $colorWhite;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 10px;
-    padding: 12px 24px;
-    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 1px 12px rgba($colorBlue, 0.4);
-    &:hover {
-        background: rgba(255, 255, 255, 0.065); // Fondo semi-transparente
-        color: $colorBlue;
-        box-shadow: 0 1px 5px rgba($colorBlue, 0.5); // Sombra más intensa al hacer hover
-    }
-    &:active {
-        transform: scale(0.90);
-        box-shadow: 0 1px 3px rgba($colorBlue, 0.3);
-    }
+  /* Botón transparente de bordo azul iluminado */
+  width: $width;
+  text-align: center;
+  font-weight: 600;
+  background: none;
+  border: 1px solid $colorBlue;
+  border-radius: 5px;
+  color: $colorWhite;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  padding: 12px 24px;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  box-shadow: 0px 1px 12px rgba($colorBlue, 0.4);
+  &:hover {
+    background: rgba(255, 255, 255, 0.065);
+    color: $colorBlue;
+    box-shadow: 0 1px 5px rgba($colorBlue, 0.5);
+  }
+  &:active {
+    transform: scale(0.9);
+    box-shadow: 0 1px 3px rgba($colorBlue, 0.3);
+  }
 }
 
+@mixin Button2 {
+  /* Este botón es de color azul con un efecto en el borde */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  background-color: $colorBlue;
+  color: $colorWhite;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.253);
+  &::before {
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    background-image: conic-gradient(
+      rgba(255, 255, 255, 0.615) 20deg,
+      transparent 120deg
+    );
+    transform: rotate(0deg);
+    top: -50px;
+    left: -50px;
+    transition: transform 2s linear;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 46px;
+    width: 196px;
+    background-color: $colorBlue;
+    border-radius: 5px;
+    top: 2.5px;
+    left: 2.5px;
+    z-index: 1;
+  }
+  &:hover::before {
+    animation: rotar 2s linear infinite;
+  }
+  &:active {
+    scale: 0.9;
+  }
+}
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.text-error {
+  font-weight: 600;
+  z-index: 2;
+}
