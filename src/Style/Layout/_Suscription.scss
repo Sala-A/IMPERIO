@@ -36,6 +36,10 @@
       background-color: $colorBlue;
       border: none;
       cursor: pointer;
+      transition: all 0.3s;
+      &:active {
+        scale: 0.90;
+      }
     }
   }
   .message {

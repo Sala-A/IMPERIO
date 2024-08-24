@@ -6,8 +6,7 @@
   justify-content: space-between;
   padding: 20px 30px 20px 40px;
   #logo {
-    transition: filter 0.3s ease;
-    filter: drop-shadow(0px 0px 10px $button-hover);
+    @include Logo();
   }
   .nav-links {
     display: flex;
