@@ -25,7 +25,7 @@ const ScrollToTopButton = () => {
 
   return (
     isVisible && (
-      <button className="scroll-to-top" onClick={scrollToTop}>
+      <button className="scroll-to-top" title="Subir" onClick={scrollToTop}>
         ↑
       </button>
     )
