@@ -1,10 +1,13 @@
 @use "../Utilities" as *;
 
 .navbar {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 20px 30px 20px 40px;
+  background-color: $colorBackground;
   #logo {
     @include Logo();
   }

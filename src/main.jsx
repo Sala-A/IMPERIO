@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Page/Home";
 import Error from "./Components/Page/Error";
-import AllRightsReserved from "./Components/Page/AllRightsReserved";
+import PrivacyPolicy from "./Components/Page/PrivacyPolicy.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
     element: <Error />,
   },
   {
-    path: "/AllRightsReserved",
-    element: <AllRightsReserved />,
+    path: "/PrivacyPolicy",
+    element: <PrivacyPolicy />,
   },
 ]);
 

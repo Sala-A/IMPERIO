@@ -55,7 +55,7 @@ export default function Footer() {
         <a id="footer-copy" href="#">
           Mapa de navegación de la página
         </a>
-        <a id="footer-copy" href="/AllRightsReserved">
+        <a id="footer-copy" href="/PrivacyPolicy">
           Daniela 2024, todos los derechos reservados.
         </a>
       </div>
