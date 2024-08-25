@@ -1,5 +1,6 @@
 import Footer from "../Common/Footer";
 import Navbar from "../Common/Navbar";
+import ScrollToTopButton from "../Common/ScrollToTopButton";
 
 export default function PrivacyPolicy() {
   return (
@@ -45,6 +46,7 @@ export default function PrivacyPolicy() {
           eliminación de su información personal.
         </p>
       </div>
+      <ScrollToTopButton />
       <Footer />
     </>
   );

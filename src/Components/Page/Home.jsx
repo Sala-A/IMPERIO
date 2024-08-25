@@ -3,10 +3,11 @@ import Footer from "../Common/Footer";
 import Suscription from "../Common/Suscription";
 import BrandGallery from "../Common/BrandGallery";
 import ProductCarousel from "../ProductCards/ProductCarousel";
+import ScrollToTopButton from "../Common/ScrollToTopButton";
 
 export default function Home() {
   return (
-    <div className="home">
+    <>
       <Navbar />
       <main className="main">
         <div className="ad-container">
@@ -68,7 +69,8 @@ export default function Home() {
       <hr />
       <ProductCarousel />
       <Suscription />
+      <ScrollToTopButton />
       <Footer />
-    </div>
+    </>
   );
 }
