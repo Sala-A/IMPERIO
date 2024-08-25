@@ -5,6 +5,7 @@ function Navbar() {
     <nav className="navbar">
       <a href="/" className="logo">
         <img
+          title="Home"
           id="logo"
           src="./imperio.png"
           style={{
@@ -27,7 +28,7 @@ function Navbar() {
           </a>
         </li>
         <li className="li-nav">
-          <a id="a-nav" href="#">
+          <a id="a-nav" href="/Contact">
             Contacto
           </a>
         </li>

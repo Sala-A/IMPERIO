@@ -12,6 +12,7 @@ export default function Footer() {
       >
         <a href="/" id="name">
           <img
+            title="Home"
             id="logo-footer"
             src="./imperio.png"
             style={{
@@ -39,7 +40,7 @@ export default function Footer() {
           />
         </a>
       </div>
-      <hr id="hr-footer"/>
+      <hr id="hr-footer" />
       <nav className="footer-nav">
         <a className="a_footer" href="#">
           Nosotros
@@ -47,7 +48,7 @@ export default function Footer() {
         <a className="a_footer" href="#">
           Tienda
         </a>
-        <a className="a_footer" href="#">
+        <a className="a_footer" href="/Contact">
           Contacto
         </a>
       </nav>
