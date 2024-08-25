@@ -12,7 +12,7 @@ export default function Footer() {
       >
         <a href="/" id="name">
           <img
-            id="logo"
+            id="logo-footer"
             src="./imperio.png"
             style={{
               width: "135px",
@@ -39,7 +39,7 @@ export default function Footer() {
           />
         </a>
       </div>
-      <hr />
+      <hr id="hr-footer"/>
       <nav className="footer-nav">
         <a className="a_footer" href="#">
           Nosotros
