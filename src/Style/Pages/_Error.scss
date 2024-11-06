@@ -1,0 +1,28 @@
+@use "../Utilities" as *;
+
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorBackground;
+    color: $colorWhite;
+    font-family: 'Arial, sans-serif';
+    #img-error{
+      width: 35%;
+      height: 35%;
+    }
+    .errorCode {
+      font-size: 10rem;
+      color: $colorBlue;
+      margin: 0;
+    }
+    .errorMessage {
+      font-size: 1.5rem;
+      color: $colorWhite;
+      margin-bottom: 2rem;
+    }
+    .homeLink {
+     @include Button2();
+    }
+  }

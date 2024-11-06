@@ -1,0 +1,41 @@
+@use "../Utilities" as *;
+
+//Para los títulos y encabezados
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+//Quita los estilos por defecto de los link
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+//sirve para que los input de numero no tengan las flechas
+input {
+  outline: none;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+//Quita las viñetas
+ul,
+li {
+  list-style-type: none;
+}
+
+hr {
+  background-color: $colorWhite;
+  border: 0;
+  height: 1px;
+  margin: 5rem 2.5rem;
+}

@@ -1,0 +1,17 @@
+@use "../Utilities" as *;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $colorWhite;
+}
+
+//Para los párrafos y texto general
+body {
+  height: 100vh;
+  background: $colorBackground;
+  font-family: "Montserrat", sans-serif;
+}

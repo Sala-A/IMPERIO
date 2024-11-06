@@ -1,0 +1,97 @@
+@use "../Utilities/" as *;
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    .ad-container {
+      position: relative;
+      max-width: 600px;
+      left: 5rem;
+      .text-main {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: $colorWhite;
+        .text-main-blue {
+          color: $colorBlue;
+        }
+      }
+      .info-text-main {
+        margin-bottom: 20px;
+        color: $colorWhite;
+      }
+      .cta-button {
+        @include button1();
+      }
+    }
+    .ad-image {
+      position: relative;
+      display: inline-block;
+      overflow: visible;
+      .circle-background {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        background-color: #00c2ff;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+      .promotional-image {
+        position: relative;
+        max-width: 350px;
+        z-index: 2;
+        display: block;
+        left: 101px;
+      }
+    }
+  }
+  .container-key-facts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    .timeline {
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 2rem;
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $colorBlue;
+        border: 3px solid $colorBackground;
+        box-shadow: 0 0 0 2px $colorWhite;
+        position: relative;
+        z-index: 1;
+      }
+      .line {
+        display: flex;
+        align-items: center;
+        width: 350px;
+        height: 4px;
+        background-color: $colorBlue;
+      }
+    }
+    .info-key-facts {
+      display: flex;
+      flex-direction: row;
+      margin-top: 3rem;
+      gap: 6rem;
+      .info-key-facts-item {
+        max-width: 280px;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .fact-title {
+        font-weight: bold;
+      }
+    }
+  }

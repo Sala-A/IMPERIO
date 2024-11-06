@@ -1,0 +1,49 @@
+@use "/src/Style/Utilities/Button" as *;
+@use "/src/Style/Utilities/Variables" as *;
+
+.card {
+  margin-left: 15px;
+  max-width: 250px;
+  min-height: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid $colorBlue;
+  border-radius: 15px;
+  box-shadow: 0 1px 8px #00c3ffab; // Sombra sutil para dar profundidad
+  transition: transform 0.3s ease;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-info {
+    position: relative;
+    z-index: 1;
+
+    .titleCard {
+      color: $colorWhite;
+      text-align: start;
+    }
+
+    .price-card {
+      color: $colorBlue;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: start;
+    }
+
+    #img-card {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid $colorWhite;
+      padding: 10px;
+      height: auto;
+      background-color: $transparent !important;
+    }
+  }
+  .btn-carousel {
+    @include button1();
+  }
+}

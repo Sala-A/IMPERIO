@@ -1,0 +1,24 @@
+@use "../Utilities" as *;
+
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 80px;
+  #title-privacy-policy{
+    color: $gris-tenue;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #policy-subtitle{
+    color: $gris-tenue;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 50px;
+  }
+  .privacy-paragraph{
+    padding: 0 50px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+}
