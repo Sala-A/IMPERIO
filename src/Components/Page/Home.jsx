@@ -1,14 +1,11 @@
-import Navbar from "../Common/Navbar";
-import Footer from "../Common/Footer";
 import Suscription from "../Common/Suscription";
 import BrandGallery from "../Common/BrandGallery";
 import ProductCarousel from "../ProductCards/ProductCarousel";
-import ScrollToTopButton from "../Common/ScrollToTopButton";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main className="main">
         <div className="ad-container">
           <h1 className="text-main">
@@ -23,7 +20,9 @@ export default function Home() {
             maximiza tu impacto con espacios atractivos e informes detallados.
             ¡Contáctanos y lleva tu negocio al siguiente nivel!
           </p>
-          <button className="cta-button">Bienvenido</button>
+          <Link to="/Contact" className="cta-button">
+            Bienvenido
+          </Link>
         </div>
         <div className="ad-image">
           <div className="circle-background"></div>
@@ -69,8 +68,6 @@ export default function Home() {
       <hr />
       <ProductCarousel />
       <Suscription />
-      <ScrollToTopButton />
-      <Footer />
     </>
   );
 }

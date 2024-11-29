@@ -1,7 +1,7 @@
 @use "../Utilities" as *;
 
 .scroll-to-top {
-position: fixed;
+  position: fixed;
   bottom: 50px;
   left: 25px;
   background-color: $colorBackground;

@@ -5,25 +5,40 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 30px 20px 40px;
   background-color: $colorBackground;
   z-index: 3;
+  position: fixed;
+  left: 0;
+  right: 0;
   #logo {
     @include Logo();
+    z-index: 6;
   }
   .nav-links {
     display: flex;
     gap: 2rem;
     position: relative;
     top: 25px;
+    justify-content: center;
+    flex: 1;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+
     .li-nav {
-      margin-top: 3.5rem;
+      margin-top: 0;
+
       #a-nav {
         position: relative;
         color: $colorWhite;
+        text-decoration: none;
+
         &:hover {
           color: $colorBlue;
         }
+
         &:after {
           content: "";
           position: absolute;
@@ -36,14 +51,90 @@
           transform-origin: bottom right;
           transition: transform 0.6s ease-out;
         }
+
         &:hover:after {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
       }
     }
-    #person:active {
-      scale: 0.95;
+  }
+  .search-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: $colorFooter;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      gap: 1.5rem;
+      flex-direction: column;
+      z-index: 5;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      align-items: center;
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .search-user {
+      display: flex;
+      justify-content: center;
+      transform: translateY(10px);
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 30px;
+      height: 25px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 6;
+
+      div {
+        width: 30px;
+        height: 4px;
+        background-color: $colorWhite;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+    }
+
+    .hamburger.active div:nth-child(1) {
+      transform: rotate(-45deg);
+      position: relative;
+      top: 6px;
+    }
+
+    .hamburger.active div:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+      transform: rotate(45deg);
+      position: relative;
+      top: -6px;
+    }
+  }
+  .navbar.active {
+    .search-user {
+      display: flex;
     }
   }
 }

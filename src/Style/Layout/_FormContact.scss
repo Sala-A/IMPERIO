@@ -1,0 +1,97 @@
+@use "../Utilities" as *;
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  margin-bottom: 20px;
+}
+.form {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  background-color: #12121255;
+  color: $colorText;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  // Espaciado entre los elementos del formulario
+}
+.form-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border-left: 3px solid $colorBlue;  // Barra azul al lado del título
+  padding-left: 8px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: $colorText;
+  background-color: $colorBackground;
+  border: 1px solid $gris-tenue;  // Gris tenue para bordes
+  outline: none;
+  transition: border-color 0.3s;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $gris-tenue;  // Placeholder gris tenue
+  }
+
+  &:focus {
+    border-color: $colorBlue;  // Azul brillante al hacer focus
+  }
+
+  &.error {
+    border-color: #ff4d4d;  // Rojo si hay error en el campo
+  }
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: $colorWhite;
+  background-color: $colorBlue;
+  border: 1px solid $colorBlue;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: $button-hover;  // Hover para el botón
+    color: $colorBackground;  // Cambiar texto al color oscuro
+  }
+}
+
+.form-error {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 15px;
+    gap: 15px;  // Menor espacio entre los campos en dispositivos pequeños
+  }
+
+  .form-title {
+    font-size: 16px;  // Título más pequeño en dispositivos móviles
+  }
+
+  .form-input {
+    font-size: 13px;  // Reducir tamaño de texto en inputs en pantallas pequeñas
+  }
+
+  .form-button {
+    font-size: 13px;  // Reducir el tamaño del botón en pantallas pequeñas
+  }
+}

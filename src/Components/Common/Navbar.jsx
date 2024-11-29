@@ -1,13 +1,22 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Search from "./Search";
 
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Cambia el estado del menú
+  };
+
   return (
-    <nav className="navbar">
-      <a href="/" className="logo">
+    <nav className={`navbar ${isMenuOpen ? "active" : ""}`}>
+      <Link to="/" className="logo">
         <img
           title="Home"
           id="logo"
           src="./imperio.png"
+          alt="Logo"
           style={{
             width: "180px",
             height: "150px",
@@ -15,32 +24,36 @@ function Navbar() {
             left: "50px",
           }}
         />
-      </a>
-      <ul className="nav-links">
+      </Link>
+      <button className={`hamburger ${isMenuOpen ? "active" : ""}`} onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+      {/* Enlaces de navegación */}
+      <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
         <li className="li-nav">
-          <a id="a-nav" href="#">
+          <Link id="a-nav" to="/Nosotros">
             Nosotros
-          </a>
+          </Link>
         </li>
         <li className="li-nav">
-          <a id="a-nav" href="#">
+          <Link id="a-nav" to="/Tienda">
             Tienda
-          </a>
+          </Link>
         </li>
         <li className="li-nav">
-          <a id="a-nav" href="/Contact">
+          <Link id="a-nav" to="/Contacto">
             Contacto
-          </a>
+          </Link>
         </li>
-        <li className="li-nav" id="person">
-          <a id="a-img" href="#" title="Log In admin">
-            <img src="../src/assets/person.svg" alt="" />
-          </a>
+
+        {/* Buscador dentro del menú */}
+        <li className="li-nav search-user">
+          <Search />
         </li>
       </ul>
-      <div className="search-user">
-        <Search />
-      </div>
     </nav>
   );
 }
