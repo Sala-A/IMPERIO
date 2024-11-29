@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -10,7 +12,7 @@ export default function Footer() {
           fontWeight: "bold",
         }}
       >
-        <a href="/" id="name">
+        <Link to="/" id="name">
           <img
             title="Home"
             id="logo-footer"
@@ -20,7 +22,7 @@ export default function Footer() {
               height: "110px",
             }}
           />
-        </a>
+        </Link>
       </div>
       <div className="social-media">
         <a className="a_socialMedia" href="instagram.com/">
@@ -42,23 +44,23 @@ export default function Footer() {
       </div>
       <hr id="hr-footer" />
       <nav className="footer-nav">
-        <a className="a_footer" href="#">
+        <Link className="a_footer" to="/Nosotros">
           Nosotros
-        </a>
-        <a className="a_footer" href="#">
+        </Link>
+        <Link className="a_footer" to="/Tienda">
           Tienda
-        </a>
-        <a className="a_footer" href="/Contact">
+        </Link>
+        <Link className="a_footer" to="/Contacto">
           Contacto
-        </a>
+        </Link>
       </nav>
       <div className="footer-copy">
-        <a id="footer-copy" href="#">
+        <Link id="footer-copy" to="#">
           Mapa de navegación de la página
-        </a>
-        <a id="footer-copy" href="/PrivacyPolicy">
+        </Link>
+        <Link id="footer-copy" to="/PrivacyPolicy">
           Daniela 2024, todos los derechos reservados.
-        </a>
+        </Link>
       </div>
     </footer>
   );

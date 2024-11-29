@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import Search from "./Search";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="/" className="logo">
+      <Link to="/" className="logo">
         <img
           title="Home"
           id="logo"
@@ -15,27 +16,22 @@ function Navbar() {
             left: "50px",
           }}
         />
-      </a>
+      </Link>
       <ul className="nav-links">
         <li className="li-nav">
-          <a id="a-nav" href="#">
+          <Link id="a-nav" to="/Nosotros">
             Nosotros
-          </a>
+          </Link>
         </li>
         <li className="li-nav">
-          <a id="a-nav" href="#">
+          <Link id="a-nav" to="/Tienda">
             Tienda
-          </a>
+          </Link>
         </li>
         <li className="li-nav">
-          <a id="a-nav" href="/Contact">
+          <Link id="a-nav" to="/Contacto">
             Contacto
-          </a>
-        </li>
-        <li className="li-nav" id="person">
-          <a id="a-img" href="#" title="Log In admin">
-            <img src="../src/assets/person.svg" alt="" />
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="search-user">
