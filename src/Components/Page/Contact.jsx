@@ -16,7 +16,9 @@ export default function Contact() {
           <h2 className="contact-title">Información de contacto</h2>
           <div className="contact-details">
             <div className="contact-item">
-              <span className="contact-icon">⏰</span>
+              <span className="contact-icon">
+                <img src="src/assets/despertador.png" width={40} />
+              </span>
               <div>
                 <h3 className="contact-item-title">Horarios de atención</h3>
                 <p>Lunes a viernes</p>
@@ -24,7 +26,9 @@ export default function Contact() {
               </div>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">📧</span>
+              <span className="contact-icon">
+                <img src="src/assets/hablar.png" width={40} />
+              </span>
               <div>
                 <h3 className="contact-item-title">Contáctanos</h3>
                 <p>Correo: Imperio@gmail.com</p>
