@@ -9,30 +9,25 @@
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid $colorBlue;
   border-radius: 15px;
-  box-shadow: 0 1px 8px #00c3ffab; // Sombra sutil para dar profundidad
+  box-shadow: 0 1px 8px #00c3ffab;
   transition: transform 0.3s ease;
   text-align: center;
-
   &:hover {
     transform: translateY(-5px);
   }
-
   .card-info {
     position: relative;
     z-index: 1;
-
     .titleCard {
       color: $colorWhite;
       text-align: start;
     }
-
     .price-card {
       color: $colorBlue;
       font-size: 1.2em;
       font-weight: bold;
       text-align: start;
     }
-
     #img-card {
       width: 100%;
       object-fit: cover;
@@ -44,6 +39,6 @@
     }
   }
   .btn-carousel {
-    @include button1();
+    @include button1(100%);
   }
 }
