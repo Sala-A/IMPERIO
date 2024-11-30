@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${isMenuOpen ? "active" : ""}`}>
-      <Link to="/" className="logo">
+      <Link to="/IMPERIO/" className="logo">
         <img
           title="Home"
           id="logo"

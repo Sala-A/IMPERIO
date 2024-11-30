@@ -12,7 +12,7 @@ export default function Footer() {
           fontWeight: "bold",
         }}
       >
-        <Link to="/" id="name">
+        <Link to="/IMPERIO/" id="name">
           <img
             title="Home"
             id="logo-footer"
@@ -55,9 +55,6 @@ export default function Footer() {
         </Link>
       </nav>
       <div className="footer-copy">
-        <Link id="footer-copy" to="#">
-          Mapa de navegación de la página
-        </Link>
         <Link id="footer-copy" to="/PrivacyPolicy">
           Daniela 2024, todos los derechos reservados.
         </Link>
