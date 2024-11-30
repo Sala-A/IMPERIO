@@ -12,11 +12,11 @@ export default function Footer() {
           fontWeight: "bold",
         }}
       >
-        <Link to="/" id="name">
+        <Link to="/IMPERIO/" id="name">
           <img
             title="Home"
             id="logo-footer"
-            src="./imperio.png"
+            src="/IMPERIO/imperio.png"
             style={{
               width: "135px",
               height: "110px",
@@ -29,7 +29,7 @@ export default function Footer() {
           <img
             id="img-icon"
             title="Instagram"
-            src="../src/assets/Instagram.svg"
+            src="/IMPERIO/Instagram.svg"
             alt="Instagram"
           />
         </a>
@@ -37,7 +37,7 @@ export default function Footer() {
           <img
             id="img-icon"
             title="Facebook"
-            src="../src/assets/Facebook.svg"
+            src="/IMPERIO/Facebook.svg"
             alt="Facebook"
           />
         </a>
@@ -55,9 +55,6 @@ export default function Footer() {
         </Link>
       </nav>
       <div className="footer-copy">
-        <Link id="footer-copy" to="#">
-          Mapa de navegación de la página
-        </Link>
         <Link id="footer-copy" to="/PrivacyPolicy">
           Daniela 2024, todos los derechos reservados.
         </Link>
