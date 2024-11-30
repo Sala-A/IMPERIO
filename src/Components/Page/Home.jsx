@@ -20,7 +20,7 @@ export default function Home() {
             maximiza tu impacto con espacios atractivos e informes detallados.
             ¡Contáctanos y lleva tu negocio al siguiente nivel!
           </p>
-          <Link to="/Contact" className="cta-button">
+          <Link to="/Contacto" className="cta-button">
             Bienvenido
           </Link>
         </div>
@@ -28,7 +28,7 @@ export default function Home() {
           <div className="circle-background"></div>
           <img
             className="promotional-image"
-            src="/women2.png"
+            src="/IMPERIO/women2.png"
             alt="Promotional"
           />
         </div>

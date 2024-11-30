@@ -17,7 +17,7 @@ export default function Contact() {
           <div className="contact-details">
             <div className="contact-item">
               <span className="contact-icon">
-                <img src="./despertador.png" width={40} />
+                <img src="/IMPERIO/despertador.png" width={40} />
               </span>
               <div>
                 <h3 className="contact-item-title">Horarios de atención</h3>
@@ -27,7 +27,7 @@ export default function Contact() {
             </div>
             <div className="contact-item">
               <span className="contact-icon">
-                <img src="./hablar.png" width={40} />
+                <img src="/IMPERIO/hablar.png" width={40} />
               </span>
               <div>
                 <h3 className="contact-item-title">Contáctanos</h3>

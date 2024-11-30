@@ -10,7 +10,7 @@ const AboutUs = () => {
       <div className="about-us-content">
         <div className="about-item">
           <div className="about-icon">
-            <img className="fas fa-gem" src="src/assets/joyas.png" width={50}/>
+            <img className="fas fa-gem" src="/IMPERIO/joyas.png" width={50}/>
           </div>
           <h3>Misión</h3>
           <p>Conectar marcas tecnológicas con su audiencia, brindando soluciones innovadoras y espacios exclusivos.</p>
@@ -18,7 +18,7 @@ const AboutUs = () => {
 
         <div className="about-item">
           <div className="about-icon">
-          <img className="fas fa-gem" src="src/assets/lanzadera.png" width={40}/>
+          <img className="fas fa-gem" src="/IMPERIO/lanzadera.png" width={40}/>
           </div>
           <h3>Visión</h3>
           <p>Ser la plataforma líder en publicidad tecnológica, impulsando el crecimiento y la innovación global.</p>
@@ -26,7 +26,7 @@ const AboutUs = () => {
 
         <div className="about-item">
           <div className="about-icon">
-          <img className="fas fa-gem" src="src/assets/objetivo.png" width={40}/>
+          <img className="fas fa-gem" src="/IMPERIO/objetivo.png" width={40}/>
           </div>
           <h3>Metas</h3>
           <p>

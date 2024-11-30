@@ -39,7 +39,7 @@ const Suscription = () => {
           required
         />
         <button className="btn-suscription" type="submit" title="Enviar" aria-label="subscribe">
-          <img src="/envelope.svg" alt="Icono para enviar" />
+          <img src="/IMPERIO/envelope.svg" alt="Icono para enviar" />
         </button>
       </form>
       {message && <p className="message">{message}</p>}

@@ -16,7 +16,7 @@ export default function Footer() {
           <img
             title="Home"
             id="logo-footer"
-            src="./imperio.png"
+            src="/IMPERIO/imperio.png"
             style={{
               width: "135px",
               height: "110px",
@@ -29,7 +29,7 @@ export default function Footer() {
           <img
             id="img-icon"
             title="Instagram"
-            src="../src/assets/Instagram.svg"
+            src="/IMPERIO/Instagram.svg"
             alt="Instagram"
           />
         </a>
@@ -37,7 +37,7 @@ export default function Footer() {
           <img
             id="img-icon"
             title="Facebook"
-            src="../src/assets/Facebook.svg"
+            src="/IMPERIO/Facebook.svg"
             alt="Facebook"
           />
         </a>

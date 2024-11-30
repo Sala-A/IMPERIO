@@ -15,7 +15,7 @@ function Navbar() {
         <img
           title="Home"
           id="logo"
-          src="./imperio.png"
+          src="/IMPERIO/imperio.png"
           alt="Logo"
           style={{
             width: "180px",
